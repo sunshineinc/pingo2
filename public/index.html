@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PingoVerso</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="login-container">
+    <h2>Login</h2>
+    <input id="username" placeholder="Usuário" />
+    <input id="password" type="password" placeholder="Senha" />
+    <button id="btnLogin">Entrar</button>
+    <button id="btnShowRegister">Registrar</button>
+    <p id="login-status"></p>
+  </div>
+
+  <div id="register-container" class="hidden">
+    <h2>Registrar</h2>
+    <input id="reg-username" placeholder="Usuário" />
+    <input id="reg-password" type="password" placeholder="Senha" />
+    <button id="btnRegister">Registrar</button>
+    <button id="btnShowLogin">Voltar ao Login</button>
+    <p id="register-status"></p>
+  </div>
+
+  <div id="game-container" class="hidden">
+    <div id="container"></div>
+    <div id="chat">
+      <div id="messages"></div>
+      <input id="inputMessage" placeholder="Digite sua mensagem..." />
+    </div>
+    <button id="btnLogout">Sair</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.152.0/build/three.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>
