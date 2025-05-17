@@ -1,7 +1,7 @@
 {
   "name": "pingoverso",
   "version": "1.0.0",
-  "description": "Jogo 3D com pinguim, chat e registro",
+  "description": "Jogo do pinguim com chat e registro",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
